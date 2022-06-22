@@ -1,18 +1,17 @@
-Solidity
+Pulsar
 ========
 
-Solidity is an object-oriented, high-level language for implementing smart
-contracts. Smart contracts are programs which govern the behaviour of accounts
-within the Ethereum state.
+`Pulsar <https://pulsarswap.com/>`_ is a decentralized platform that provides joint functionalities on a decentralized exchange center (DEX) and the buyback of DAO shares.
+In particular, we offer DEX consisting of both instant swap and term swap. The term swap enables trades with long-term orders with lower slippage costs. It also offers
+the buyback of DAO shares with the purchase time window is completely set at users' discretion.  
 
-Solidity is a `curly-bracket language <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_ designed to target the Ethereum Virtual Machine (EVM).
-It is influenced by C++, Python and JavaScript. You can find more details about which languages Solidity has been inspired by in the :doc:`language influences <language-influences>` section.
 
-Solidity is statically typed, supports inheritance, libraries and complex
-user-defined types among other features.
+This documentation details the APIs we offer at Pulsar for two purposes:
 
-With Solidity you can create contracts for uses such as voting, crowdfunding, blind auctions,
-and multi-signature wallets.
+* Provide instruction for DAO buybacks on how to submit the buyback order.
+* Provide instruction for customers who participate in the buyback or related trades.
+
+
 
 When deploying contracts, you should use the latest released
 version of Solidity. Apart from exceptional cases, only the latest version receives
@@ -37,22 +36,25 @@ read our :doc:`contributors guide <contributing>` for more details.
 
 Getting Started
 ---------------
+Here we introduce some preliminaries.
 
-**1. Understand the Smart Contract Basics**
+**1. Get to Know Solidity**
 
-If you are new to the concept of smart contracts we recommend you to get started by digging
-into the "Introduction to Smart Contracts" section, which covers:
+Solidity is a `curly-bracket language <https://en.wikipedia.org/wiki/List_of_programming_languages_by_type#Curly-bracket_languages>`_ designed to target the Ethereum Virtual Machine (EVM).
+It is influenced by C++, Python and JavaScript. You can find more details about which languages Solidity has been inspired by in the :doc:`language influences <language-influences>` section.
 
-* :ref:`A simple example smart contract <simple-smart-contract>` written in Solidity.
-* :ref:`Blockchain Basics <blockchain-basics>`.
-* :ref:`The Ethereum Virtual Machine <the-ethereum-virtual-machine>`.
+Solidity is statically typed, supports inheritance, libraries and complex
+user-defined types among other features.
 
-**2. Get to Know Solidity**
+With Solidity you can create contracts for uses such as voting, crowdfunding, blind auctions,
+and multi-signature wallets.
 
 Once you are accustomed to the basics, we recommend you read the :doc:`"Solidity by Example" <solidity-by-example>`
 and “Language Description” sections to understand the core concepts of the language.
 
-**3. Install the Solidity Compiler**
+
+
+**2. Term Swap**
 
 There are various ways to install the Solidity compiler,
 simply choose your preferred option and follow the steps outlined on the :ref:`installation page <installing-solidity>`.
@@ -74,39 +76,11 @@ simply choose your preferred option and follow the steps outlined on the :ref:`i
 
 **4. Learn More**
 
-If you want to learn more about building decentralized applications on Ethereum, the
+If you want to learn more about this project Pulsar, we refer `Pulsar Official Website <https://pulsarswap.com/>`_ for details.
 `Ethereum Developer Resources <https://ethereum.org/en/developers/>`_
 can help you with further general documentation around Ethereum, and a wide selection of tutorials,
 tools and development frameworks.
 
-If you have any questions, you can try searching for answers or asking on the
-`Ethereum StackExchange <https://ethereum.stackexchange.com/>`_, or
-our `Gitter channel <https://gitter.im/ethereum/solidity/>`_.
-
-.. _translations:
-
-Translations
-------------
-
-Community contributors help translate this documentation into several languages.
-Note that they have varying degrees of completeness and up-to-dateness. The English
-version stands as a reference.
-
-You can switch between languages by clicking on the flyout menu in the bottom-left corner
-and selecting the preferred language.
-
-* `French <https://docs.soliditylang.org/fr/latest/>`_
-* `Indonesian <https://github.com/solidity-docs/id-indonesian>`_
-* `Persian <https://github.com/solidity-docs/fa-persian>`_
-* `Japanese <https://github.com/solidity-docs/ja-japanese>`_
-* `Korean <https://github.com/solidity-docs/ko-korean>`_
-* `Chinese <https://github.com/solidity-docs/zh-cn-chinese/>`_
-
-.. note::
-
-   We recently set up a new GitHub organization and translation workflow to help streamline the
-   community efforts. Please refer to the `translation guide <https://github.com/solidity-docs/translation-guide>`_
-   for information on how to start a new language or contribute to the community translations.
 
 Contents
 ========
