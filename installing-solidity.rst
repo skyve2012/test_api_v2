@@ -3,7 +3,7 @@
 .. _installing-solidity:
 
 ################################
-Installing the Solidity Compiler
+Instant Swap API
 ################################
 
 Versioning

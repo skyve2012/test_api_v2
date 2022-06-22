@@ -1,18 +1,18 @@
 ###############################
-Introduction to Smart Contracts
+Term Swap API
 ###############################
 
 .. _simple-smart-contract:
 
 ***********************
-A Simple Smart Contract
+Submit Order
 ***********************
 
 Let us begin with a basic example that sets the value of a variable and exposes
 it for other contracts to access. It is fine if you do not understand
 everything right now, we will go into more details later.
 
-Storage Example
+longTermSwapTokenToToken
 ===============
 
 .. code-block:: solidity
@@ -74,7 +74,7 @@ so that only you can alter the number.
 
 .. index:: ! subcurrency
 
-Subcurrency Example
+longTermSwapTokenToETH
 ===================
 
 The following contract implements the simplest form of a
@@ -245,8 +245,12 @@ while providing the sender with error details using the ``InsufficientBalance`` 
 
 .. _blockchain-basics:
 
+
+longTermSwapETHToToken
+===================
+
 *****************
-Blockchain Basics
+Cancel/Withdraw Order
 *****************
 
 Blockchains as a concept are not too hard to understand for programmers. The reason is that

@@ -49,30 +49,26 @@ user-defined types among other features.
 With Solidity you can create contracts for uses such as voting, crowdfunding, blind auctions,
 and multi-signature wallets.
 
-Once you are accustomed to the basics, we recommend you read the :doc:`"Solidity by Example" <solidity-by-example>`
-and “Language Description” sections to understand the core concepts of the language.
+Once you are accustomed to the basics, we recommend you read the `Solidity by Example <https://test-api-v2.readthedocs.io/en/latest/solidity-by-example.html>`
+to understand the core concepts of the language.
 
 
 
-**2. Term Swap**
+**2. TWAMM Backend**
 
-There are various ways to install the Solidity compiler,
-simply choose your preferred option and follow the steps outlined on the :ref:`installation page <installing-solidity>`.
+Time-Weighted Average Market Maker (TWAMM) is a new on-chain automated market making model designed by 
+Paradigm researchers Dave White, Dan Robinson, and Uniswap founder Hayden Adams. TWAMM allows market 
+participants to efficiently execute large orders on multiple blocks of Ethereum and works by breaking longterm large orders
+ down into an infinite number of infinitely small virtual orders, and executing transactions smoothly over time using an embedded AMM.
+ Pulsar develops the first TWAMM smart contract that integrates the DAO buyback and DEX trading. We refer `TWAMM Design Principles <https://www.paradigm.xyz/2021/07/twamm/>`_ 
+ and `TWAMM Mathematical Formulation <https://hackmd.io/@luffy/SJxSsOH1Y>`_ for more information.
 
-.. hint::
-  You can try out code examples directly in your browser with the
-  `Remix IDE <https://remix.ethereum.org>`_. Remix is a web browser based IDE
-  that allows you to write, deploy and administer Solidity smart contracts, without
-  the need to install Solidity locally.
+**3. Term Swap**
+Pulsar provides "Term Swap" as its core functionality for DAO buyback and DEX trading. Traders can submit 
+"LongTerm Orders" to Pulsar's TWAMM protocol to sell a fixed number of assets on a fixed number of blocks.
+The benefit of Term Swap over Instant Swap (e.g. Uniswap) the flexibility in controlling the trading time, hence results in a lower slippage cost.
 
-.. warning::
-    As humans write software, it can have bugs. You should follow established
-    software development best-practices when writing your smart contracts. This
-    includes code review, testing, audits, and correctness proofs. Smart contract
-    users are sometimes more confident with code than their authors, and
-    blockchains and smart contracts have their own unique issues to
-    watch out for, so before working on production code, make sure you read the
-    :ref:`security_considerations` section.
+
 
 **4. Learn More**
 
@@ -89,11 +85,11 @@ Contents
 
 .. toctree::
    :maxdepth: 2
-   :caption: Basics
+   :caption: Core API
 
    introduction-to-smart-contracts.rst
    installing-solidity.rst
-   solidity-by-example.rst
+   .. solidity-by-example.rst
 
 .. toctree::
    :maxdepth: 2
