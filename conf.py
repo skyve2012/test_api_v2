@@ -70,7 +70,7 @@ project_copyright = '2016-2021, Ethereum'
 # built documents.
 #
 # The short X.Y version.
-with open('../CMakeLists.txt', 'r', encoding='utf8') as f:
+with open('./CMakeLists.txt', 'r', encoding='utf8') as f:
     version = re.search('PROJECT_VERSION "([^"]+)"', f.read()).group(1)
 # The full version, including alpha/beta/rc tags.
 if not os.path.isfile('../prerelease.txt') or os.path.getsize('../prerelease.txt') == 0:
